@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  clientID: 31f7d7733cdbc2f5acad                            #生成的clientID
+  clientSecret: 58ae5195a83df897b87444fcafd03746a821aec9    #生成的clientSecret
   repo: navining.github.io    #仓库名称
   owner: navining    #github用户名
   admin: navining
