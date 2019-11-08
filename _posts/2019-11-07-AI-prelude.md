@@ -14,7 +14,7 @@ tags:
 # Navi's Road to AI - Prelude 🎵
 > Sharing my own experience in learning Artificial Intelligence
 
-## Why writing this
+## Why Writing This
 This fall I start my first graduate semester in UI. As a student with another background, ```CS 440 - Artificial Intelligence``` is the first PURE CS professional course I take, and it is also a starting point of my road to IT industry.
 
 Thanks so much to this great course and the help of Professor Fleck, who is a very nice person, I really enjoyed the learning process and was deeply fascinated by the AI world. Hence, I think it is necessary to record my learning experience, not only as a review, but also as a *heuristic*.
