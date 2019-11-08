@@ -7,7 +7,7 @@ author:     Navi
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-    - Notes
+    - Life
 ---
 # Hello World!
 I am so **EXCITED** to witness the birth of my blog!
