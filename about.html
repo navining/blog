@@ -6,36 +6,10 @@ header-img: "img/post-bg-rwd.jpg"
 ---
 
 <!-- Language Selector -->
-<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 英文 English </option>
     <option value="1" > 中文 Chinese </option>
-</select> -->
-
-<!-- Chinese Version -->
-<!-- <div class="zh post-container">
-
-    
-    <blockquote><p>勿忘初心<br>
-    方得始终</p></blockquote>
-
-    <p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>
-
-    <p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>
-
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。如果有什么问题，欢迎提出探讨~</p>
-
-    <p></p>
-    
-    <h5>Talks</h5>
-
-    <ul>
-        <li><a href="https://navining.github.io/resume"></a>Navi的简历</li>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
-</div> -->
+</select>
 
 <!-- English Version -->
 <div class="en post-container">
@@ -48,7 +22,7 @@ header-img: "img/post-bg-rwd.jpg"
     
     <p>I am also an amateur songwriter and a huge fan of sports.</p>
 
-    <img src="/img/about-navi2.jpg" alt="Navi" width="400">
+    <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
 
     <h5>Links</h5>
 
@@ -60,8 +34,34 @@ header-img: "img/post-bg-rwd.jpg"
     </ul>
 </div>
 
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+    
+    <blockquote><p>勿忘初心<br>
+    方得始终</p></blockquote>
+
+    <p>Hi，我是<strong>Navi</strong>，现在是伊利诺伊大学的一名硕士研究生，专业是<i>材料科学与工程</i>与<i>计算科学与工程</i>。</p>
+
+    <p>这是我的个人博客，记录我的日常生活和一些想法。</p>
+
+    <p>我同时还是一名原创音乐人和体育爱好者。</p>
+
+    <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
+    
+    <h5>链接</h5>
+
+    <ul>
+        <li><a href="https://navining.github.io/resume">Navi的简历</a></li>
+        <li><a href="https://github.com/navining">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/navining/">领英</a></li>
+        <li><a href="https://music.163.com/#/artist?id=12146206">网易云音乐</a></li>
+    </ul>
+</div>
+
 <!-- Handle Language Change -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
+
     // get nodes
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
@@ -73,17 +73,17 @@ header-img: "img/post-bg-rwd.jpg"
     // handle render
     function _render(){
         var _hash = window.location.hash;
-        // en by default
-        if(_hash == "#en"){
-            $select.selectedIndex = 0;
-            $en.style.display = "block";
-            $zh.style.display = "none";
         // zh
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
+        if(_hash == "#zh"){
             $select.selectedIndex = 1;
             $zh.style.display = "block";
             $en.style.display = "none";
+        // en by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $en.style.display = "block";
+            $zh.style.display = "none";
         }
     }
 
@@ -98,7 +98,7 @@ header-img: "img/post-bg-rwd.jpg"
 
     // init
     _render();
-</script> -->
+</script>
 
 
 <!-- Gitalk 评论 start  -->
