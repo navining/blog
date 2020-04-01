@@ -5,7 +5,7 @@ header-img: img/post-bg-desk.jpg
 email: superokvv@gmail.com
 description: "The very beginning mind itself is the most accomplished mind of true enlightenment."
 keyword: "Navi, Navi Ning"
-url: "http://navining.github.io"          # your host, for absolute URL
+url: "http://navining.me"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/navining/navining.github.io.git" # you code repository
 
