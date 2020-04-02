@@ -15,7 +15,7 @@ tags:
 
 Any programming language is compiled into commands and data. When a program start, it will be loaded from the disk into the memory. However, it won't be loaded into the physical memory directly. Under a x86-32 Linux operating system, current process will be allocated a space of 2^32 bits (4 GB), which is called the virtual address space.
 
-![virtual-address-space](../img/cpp/virtual-address-space.png)
+![virtual-address-space](/img/cpp/virtual-address-space.png)
 
 Virtual means that this space does not exists physically, it is just a data structure provided by the system. This virtual space is divided into two parts: user space and kernel space. In default, the user space occupies 3 GB and the kernel space occupies 1 GB.
 
