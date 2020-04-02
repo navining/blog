@@ -57,7 +57,7 @@ Then we meet the next commands. We assign the return value of sum() to variable 
 
 ### Function Call
 
-After a function is called, we first push all the arguments into the stack. In C and C++, the push order is from right to left, so we push *b* and *a* inorder.
+After a function is called, we first push all the arguments into the stack. In C and C++, the push order is from right to left, so we push *b* and *a* in order.
 
 ```assembly
 mov eax, dword ptr[ebp-8]
@@ -125,13 +125,13 @@ add esp, 8
 mov dword ptr[ebp-0Ch], eax # assign return value
 ```
 
-Now the stack frame remains the same as initally. All memories related to the called function has been eliminated.
+Now the stack frame remains the same as initially. All memories related to the called function has been eliminated.
 
 ![function-call-6](../img/cpp/function-call-6.png)
 
 ### At Last 
 
-This is all about the underlying principle of function call and return. Now we are able to answer these two questions at the begining. You may also figure out what's the problem in the following code, and how to avoid this in your own codes.
+This is all about the underlying principle of function call and return. Now we are able to answer these two questions at the beginning. You may also figure out what's the problem in the following code, and how to avoid this in your own codes.
 
 ```c++
 int* foo() {
