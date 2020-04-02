@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Go C++ (1) - Virtual Address Space of Process: Memory Partition and Layout
+title:      Virtual Address Space of Process - Memory Partition and Layout
 subtitle:   What happen after a program starts
 date:       2020-4-1
 author:     Navi
-header-img: img/post-bg-cpp.jpg
+header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - C++
@@ -15,7 +15,7 @@ tags:
 
 Any programming language is compiled into commands and data. When a program start, it will be loaded from the disk into the memory. However, it won't be loaded into the physical memory directly. Under a x86-32 Linux operating system, current process will be allocated a space of 2^32 bits (4 GB), which is called the virtual address space.
 
-![virtual-address-space](../img/c++/virtual-address-space.png)
+![virtual-address-space](/img/cpp/virtual-address-space.png)
 
 Virtual means that this space does not exists physically, it is just a data structure provided by the system. This virtual space is divided into two parts: user space and kernel space. In default, the user space occupies 3 GB and the kernel space occupies 1 GB.
 
@@ -43,22 +43,24 @@ cout << g_data << endl;	  // 0
 Variables declared out side functions are stored as data type. So they are stored inside *.data* or *.bss* depending on whether they are initialized or not. Notice that all local variables declared inside function scope are all compiled into assembly commands instead of data. So they all stored in *.text*. After the function is called, the system will load these commands, and create corresponding spaces on the function stack for these variables. 
 
 ```c++
-int g_data1 = 10;	// .data
-int g_data2 = 0;	// .bss
-int g_data3;		// .bss
+int g_data1 = 10;     // .data
+int g_data2 = 0;    // .bss
+int g_data3;      // .bss
 
-static int g_data4 = 11;	// .data
-static int g_data5 = 0;		// .bss
-static int g_data6;			// .bss
+static int g_data4 = 11;    // .data
+static int g_data5 = 0;   // .bss
+static int g_data6;     // .bss
 
 int main() {
-    int a = 12;		// .text
-    int b = 0;		// .text
-    int c;			// .text
+    int a = 12;     // .text
+    int b = 0;    // .text
+    int c;      // .text
     
-    static int e = 13;		// .data
-    static int f = 0;		// .bss
-    static int g;			// .bss
+    static int e = 13;    // .data
+    static int f = 0;   // .bss
+    static int g;     // .bss
+
+    return 0;
 }
 ```
 

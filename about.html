@@ -6,98 +6,103 @@ header-img: "img/post-bg-rwd.jpg"
 ---
 
 <!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 英文 English </option>
-    <option value="1" > 中文 Chinese </option>
+<select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
+  <option value="0" selected> 英文 English </option>
+  <option value="1"> 中文 Chinese </option>
 </select>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>A Modest Learner. <br>
-    Coding, Sports and Music.</p></blockquote>
+  <blockquote>
+    <p>A Modest Learner. <br>
+      Coding, Sports and Music.</p>
+  </blockquote>
 
-    <p>Hi, I am <strong>Navi Ning</strong>, a graduate student in University of Illinois, major in <i>Materials Science & Engineering</i> and <i>Computational Science & Engineering.</i></p>
+  <p>Hi, I am <strong>Navi Ning</strong>, a graduate student in University of Illinois, major in <i>Materials Science &
+      Engineering</i> and <i>Computational Science & Engineering.</i></p>
 
-    <p>This is my personal blog, a record of my life and thoughts.</p>
-    
-    <p>I am also an amateur songwriter and a huge fan of sports.</p>
+  <p>This is my personal blog, a record of my life and thoughts.</p>
 
-    <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
+  <p>I am also an amateur songwriter and a huge fan of sports.</p>
 
-    <h5>Links</h5>
+  <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
 
-    <ul>
-    <li><a href="https://navining.github.io/resume">Resume</a></li>
+  <h5>Links</h5>
+
+  <ul>
+    <li><a href="https://navining.me/resume">Resume</a></li>
     <li><a href="https://github.com/navining">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/navining/">LinkedIn</a></li>
     <li><a href="https://music.163.com/#/artist?id=12146206">NetEase Cloud Music</a></li>
-    </ul>
+  </ul>
 </div>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
 
-    
-    <blockquote><p>勿忘初心<br>
-    方得始终</p></blockquote>
 
-    <p>Hi，我是<strong>Navi</strong>，现在是伊利诺伊大学的一名硕士研究生，专业是<i>材料科学与工程</i>与<i>计算科学与工程</i>。</p>
+  <blockquote>
+    <p>勿忘初心<br>
+      方得始终</p>
+  </blockquote>
 
-    <p>这是我的个人博客，记录我的日常生活和一些想法。</p>
+  <p>Hi，我是<strong>Navi</strong>，现在是伊利诺伊大学的一名硕士研究生，专业是<i>材料科学与工程</i>与<i>计算科学与工程</i>。</p>
 
-    <p>我同时还是一名原创音乐人和体育爱好者。</p>
+  <p>这是我的个人博客，记录我的日常生活和一些想法。</p>
 
-    <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
-    
-    <h5>链接</h5>
+  <p>我同时还是一名原创音乐人和体育爱好者。</p>
 
-    <ul>
-        <li><a href="https://navining.github.io/resume">Navi的简历</a></li>
-        <li><a href="https://github.com/navining">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/navining/">领英</a></li>
-        <li><a href="https://music.163.com/#/artist?id=12146206">网易云音乐</a></li>
-    </ul>
+  <img src="/img/about-navi2.jpg" alt="Navi's Photo" width="400" title="Navi Ning">
+
+  <h5>链接</h5>
+
+  <ul>
+    <li><a href="https://navining.me/resume">Navi的简历</a></li>
+    <li><a href="https://github.com/navining">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/navining/">领英</a></li>
+    <li><a href="https://music.163.com/#/artist?id=12146206">网易云音乐</a></li>
+  </ul>
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
 
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+  // get nodes
+  var $zh = document.querySelector(".zh");
+  var $en = document.querySelector(".en");
+  var $select = document.querySelector("select");
 
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
+  // bind hashchange event
+  window.addEventListener('hashchange', _render);
 
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // zh
-        if(_hash == "#zh"){
-            $select.selectedIndex = 1;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        // en by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        }
+  // handle render
+  function _render() {
+    var _hash = window.location.hash;
+    // zh
+    if (_hash == "#zh") {
+      $select.selectedIndex = 1;
+      $zh.style.display = "block";
+      $en.style.display = "none";
+      // en by default
+    } else {
+      // not trigger onChange, otherwise cause a loop call.
+      $select.selectedIndex = 0;
+      $en.style.display = "block";
+      $zh.style.display = "none";
     }
+  }
 
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#en"
-        }else{
-            window.location.hash = "#zh"
-        }
+  // handle select change
+  function onLanChange(index) {
+    if (index == 0) {
+      window.location.hash = "#en"
+    } else {
+      window.location.hash = "#zh"
     }
+  }
 
-    // init
-    _render();
+  // init
+  _render();
 </script>
 
 
@@ -108,43 +113,42 @@ header-img: "img/post-bg-rwd.jpg"
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
-    <script type="text/javascript">
-    var gitalk = new Gitalk({
+<script type="text/javascript">
+  var gitalk = new Gitalk({
     clientID: '{{site.gitalk.clientID}}',
     clientSecret: '{{site.gitalk.clientSecret}}',
     repo: '{{site.gitalk.repo}}',
     owner: '{{site.gitalk.owner}}',
     admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-    id: 'about',
+    distractionFreeMode: {{ site.gitalk.distractionFreeMode }},
+  id: 'about',
     });
-    gitalk.render('gitalk-container');
+  gitalk.render('gitalk-container');
 </script>
 {% endif %}
 <!-- Gitalk end -->
 
- <!-- disqus 评论框 start  -->
+<!-- disqus 评论框 start  -->
 {% if site.disqus.enable %}
 
 <div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-    </div>
+  <div id="disqus_thread" class="disqus-thread">
+  </div>
 </div>
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = "{{site.disqus.username}}";
+  var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+  var disqus_url = "{{site.url}}{{page.url}}";
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+  (function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
-
