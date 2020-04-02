@@ -7,7 +7,6 @@ author:     Navi
 header-img: img/post-bg-AI.jpg
 catalog: true
 tags:
-    - Notes
     - AI
     - 
 ---
