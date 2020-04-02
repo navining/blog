@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Function Call - Heap and Stack
+title:      Function Call - Stack Frame
 subtitle:   What happen after a function is called
 date:       2020-4-2
 author:     Navi
@@ -12,7 +12,7 @@ tags:
     - 
 ---
 
-# Function Call: Heap and Stack
+# Function Call: Stack Frame
 
 Let's look at the following code:
 
