@@ -65,7 +65,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 31f7d7733cdbc2f5acad                            #生成的clientID
   clientSecret: 58ae5195a83df897b87444fcafd03746a821aec9    #生成的clientSecret
-  repo: navining.github.io    #仓库名称
+  repo: navining.me    #仓库名称
   owner: navining    #github用户名
   admin: navining
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
