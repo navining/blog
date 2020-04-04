@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      [Go C++] Function Call - Stack Frame
+title:      Function Call - Stack Frame
 subtitle:   What happen after a function is called
 date:       2020-4-2
 author:     Navi

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      [Go C++] Virtual Address Space of Process - Memory Partition and Layout
+title:      Virtual Address Space of Process - Memory Partition and Layout
 subtitle:   What happen after a program starts
 date:       2020-4-1
 author:     Navi

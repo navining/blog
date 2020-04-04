@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      [Go C++] Default Arguments
+title:      Default Arguments
 subtitle:   Function with default arguments
 date:       2020-4-4
 author:     Navi

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      [Go C++] Program Compiling and Linking
+title:      Program Compiling and Linking
 subtitle:   From source code to executable file
 date:       2020-4-4
 author:     Navi
