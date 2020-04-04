@@ -2,7 +2,7 @@
 layout:     post
 title:      Program Compiling and Linking
 subtitle:   From source code to executable file
-date:       2020-4-4
+date:       2020-4-3
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
