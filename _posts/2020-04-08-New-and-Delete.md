@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "new" and "delete"
+title:      new and delete
 subtitle:   Operators for memory management
 date:       2020-4-8
 author:     Navi
