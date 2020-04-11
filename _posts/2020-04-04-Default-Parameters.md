@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Default Arguments
-subtitle:   Function with default arguments
+title:      Default Parameters
+subtitle:   Function with default parameters
 date:       2020-4-4
 author:     Navi
 header-img: img/post-bg-debug.png
