@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      Class and Object
+subtitle:   Essences of object-oriented
+date:       2020-4-11
+author:     Navi
+header-img: img/post-bg-debug.png
+catalog: true
+tags:
+    - C++
+    - 
+---
+
 # Class and Object
 
 OOP (Object-Oriented Programming) is almost the most important programming paradigm nowadays. The following code is a class *Goods* which represents goods from a grocery.
