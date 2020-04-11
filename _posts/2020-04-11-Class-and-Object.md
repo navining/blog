@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Class and Object
-subtitle:   Essences of object-oriented
+subtitle:   Essences of object-oriented programming
 date:       2020-4-11
 author:     Navi
 header-img: img/post-bg-debug.png
