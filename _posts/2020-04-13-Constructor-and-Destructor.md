@@ -2,7 +2,7 @@
 layout:     post
 title:      Constructor and Destructor
 subtitle:   Manage the lifecycle of an object
-date:       2020-4-11
+date:       2020-4-13
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
