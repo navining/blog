@@ -2,7 +2,7 @@
 layout:     post
 title:      Various Member Functions
 subtitle:   In-depth understanding of the relationship between member functions
-date:       2020-4-17
+date:       2020-4-18
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
