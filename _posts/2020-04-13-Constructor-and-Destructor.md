@@ -8,7 +8,7 @@ header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - C++
-    - 
+    - OOP
 ---
 
 # Constructor and Destructor

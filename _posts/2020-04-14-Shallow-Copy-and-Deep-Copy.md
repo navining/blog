@@ -8,7 +8,8 @@ header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - C++
-    - 
+    - OOP	
+    - Memory Management
 ---
 
 # Shallow Copy and Deep Copy
