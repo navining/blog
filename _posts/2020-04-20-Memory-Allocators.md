@@ -8,9 +8,9 @@ header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - C++
-	- STL
-	- Templates
-	- Memory Management
+    - Templates
+    - STL
+    - Memory Management
 ---
 
 # Memory Allocators
