@@ -2,13 +2,14 @@
 layout:     post
 title:      Memory Allocators
 subtitle:   Indispensable component in template containers
-date:       2020-4-19
+date:       2020-4-20
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - C++
 	- STL
+	- Templates
 	- Memory Management
 ---
 
