@@ -9,7 +9,7 @@ catalog: true
 tags:
     - C++
     - Memory Management
-	- Design Patterns
+    - Design Patterns
 ---
 
 # Overloading of `new` and `delete`: Object Pool
