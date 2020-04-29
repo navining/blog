@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Virtual Functions, Static Binding and Dynamic Binding
-subtitle:   How does C++ implement polymorphism
+title:      More about Virtual Functions
+subtitle:   Other things worth mentioning about virtual functions
 date:       2020-4-28
 author:     Navi
 header-img: img/post-bg-debug.png
