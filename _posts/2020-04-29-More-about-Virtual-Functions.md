@@ -2,7 +2,7 @@
 layout:     post
 title:      More about Virtual Functions
 subtitle:   Other things worth mentioning about virtual functions
-date:       2020-4-28
+date:       2020-4-29
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
