@@ -2,7 +2,7 @@
 layout:     post
 title:      More about Binders
 subtitle:   Underlying implementation of bind1st and bind2nd
-date:       2020-5-21
+date:       2020-5-20
 author:     Navi
 header-img: img/post-bg-debug.png
 catalog: true
