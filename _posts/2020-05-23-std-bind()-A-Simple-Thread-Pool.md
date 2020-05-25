@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      std::bind(): A Simple Thread Pool
+title:      std::bind() - A Simple Thread Pool
 subtitle:   Implement a simple thread pool with std::bind()
 date:       2020-5-23
 author:     Navi
