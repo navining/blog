@@ -1,2 +1,2 @@
 # Navi's Blog
-:point_right: [navining.me](https://navining.me)
+:point_right: [blog.navining.me](https://blog.navining.me)
